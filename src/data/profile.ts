@@ -35,8 +35,8 @@ export const profile = {
   linkedin: 'https://www.linkedin.com/in/rejie-rufin-837113147',
   website: 'https://rejierufin.github.io',
   // Drop your photo at public/portrait.jpg and it replaces the monogram.
-  portraitSrc: '/portrait.jpg',
-  avatarSrc: '/avatar.svg',
+  portraitSrc: `${import.meta.env.BASE_URL}portrait.jpg`,
+  avatarSrc: `${import.meta.env.BASE_URL}avatar.svg`,
   heroHeadline: ['Import freight,', 'documented right', 'the first time.'],
   heroLede:
     'Nine years across freight forwarding and customs documentation — import manifests, air and sea freight paperwork, and the process tools that keep both accurate.',
@@ -53,7 +53,9 @@ export const profile = {
   ],
 }
 
-export const toolGroups = [
+export type Tool = string | { name: string; href: string }
+
+export const toolGroups: { label: string; items: Tool[] }[] = [
   {
     label: 'Microsoft',
     items: [
@@ -72,6 +74,13 @@ export const toolGroups = [
   {
     label: 'Google',
     items: ['Chrome', 'Drive', 'Sheets', 'Docs', 'Forms', 'Gemini', 'Colab'],
+  },
+  {
+    label: 'Trade systems',
+    items: [
+      { name: 'e-Trade', href: 'https://www.etrade.net.ph/etrade-2.0' },
+      { name: 'eKonek', href: 'https://www.ekonek.com/' },
+    ],
   },
 ]
 

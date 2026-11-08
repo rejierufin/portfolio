@@ -351,6 +351,21 @@
   color: var(--ink-soft);
 }
 
+.pill-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  color: var(--accent);
+  border-color: color-mix(in srgb, var(--accent) 26%, var(--line));
+  background: color-mix(in srgb, var(--accent) 7%, var(--surface-2));
+  transition: border-color 0.2s ease, transform 0.2s ease;
+}
+
+.pill-link:hover {
+  border-color: var(--accent);
+  transform: translateY(-1px);
+}
+
 .skill-note {
   font-size: 11.5px;
   line-height: 1.55;

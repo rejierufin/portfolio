@@ -27,8 +27,8 @@ export function ProfileRail({
             <img
               src={portrait}
               alt={`Portrait of ${profile.name}`}
-              width={800}
-              height={1000}
+              width={1208}
+              height={1801}
               fetchPriority="high"
               onError={useFallback}
             />

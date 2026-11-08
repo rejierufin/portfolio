@@ -3,6 +3,9 @@ import react from '@vitejs/plugin-react'
 import path from 'node:path'
 
 export default defineConfig({
+  // Relative base so the built site works at a domain root and at a subpath
+  // such as https://rejierufin.github.io/portfolio/ without rebuilding.
+  base: './',
   plugins: [react()],
   resolve: {
     alias: {

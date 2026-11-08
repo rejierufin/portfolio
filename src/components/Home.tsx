@@ -1,7 +1,18 @@
 import { ArrowRight, ArrowUpRight } from '@phosphor-icons/react'
-import { education, jobs, profile, stats, toolGroups } from '../data/profile'
+import { education, jobs, profile, stats, toolGroups, type Tool } from '../data/profile'
 
 const current = jobs.find((job) => job.current) ?? jobs[0]
+
+function ToolChip({ item }: { item: Tool }) {
+  if (typeof item === 'string') return <span className="pill">{item}</span>
+
+  return (
+    <a className="pill pill-link" href={item.href} target="_blank" rel="noreferrer">
+      {item.name}
+      <ArrowUpRight size={11} weight="bold" aria-hidden="true" />
+    </a>
+  )
+}
 
 const focus = [
   { title: 'Import customs manifests', note: 'Vietnam & Cambodia' },
@@ -14,10 +25,7 @@ export function Home() {
   return (
     <section id="home" className="section">
       <div className="hero" data-reveal>
-        <p className="hero-eyebrow">
-          <span className="dot" aria-hidden="true" />
-          {profile.availability}
-        </p>
+        <p className="section-kicker">{profile.location}</p>
         <h2 className="hero-title">
           Import freight, <em>documented right</em> the first time.
         </h2>
@@ -95,9 +103,10 @@ export function Home() {
                 <p className="tool-group-label">{group.label}</p>
                 <div className="chips">
                   {group.items.map((item) => (
-                    <span className="pill" key={item}>
-                      {item}
-                    </span>
+                    <ToolChip
+                      key={typeof item === 'string' ? item : item.name}
+                      item={item}
+                    />
                   ))}
                 </div>
               </div>
