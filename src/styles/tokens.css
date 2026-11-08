@@ -1,0 +1,42 @@
+:root {
+  --font-sans: 'Poppins', ui-sans-serif, system-ui, -apple-system, 'Segoe UI', sans-serif;
+
+  --bg: #f2f2ea;
+  --surface: #fbfbf5;
+  --surface-2: #f0f0e5;
+  --ink: #11161f;
+  --ink-soft: #3e4857;
+  --ink-mute: #6c7686;
+  --line: rgba(17, 22, 31, 0.1);
+  --line-strong: rgba(17, 22, 31, 0.2);
+  --accent: #0f6f66;
+  --accent-soft: rgba(15, 111, 102, 0.1);
+  --amber: #b4622e;
+  --rail-bg: rgba(251, 251, 245, 0.75);
+  --glow: rgba(23, 160, 143, 0.16);
+  --shadow-soft: 0 1px 2px rgba(17, 22, 31, 0.04), 0 18px 40px -30px rgba(17, 22, 31, 0.45);
+  --radius: 22px;
+  --maxw: 1060px;
+  --rail-w: 320px;
+
+  color-scheme: light;
+}
+
+html[data-theme='dark'] {
+  --bg: #070b14;
+  --surface: #0d1420;
+  --surface-2: #111a28;
+  --ink: #eef2f7;
+  --ink-soft: #c3ccd9;
+  --ink-mute: #8d9aad;
+  --line: rgba(238, 242, 247, 0.1);
+  --line-strong: rgba(238, 242, 247, 0.22);
+  --accent: #6fd3c0;
+  --accent-soft: rgba(111, 211, 192, 0.12);
+  --amber: #f0a66b;
+  --rail-bg: rgba(9, 14, 22, 0.75);
+  --glow: rgba(64, 165, 150, 0.18);
+  --shadow-soft: 0 1px 0 rgba(255, 255, 255, 0.03), 0 20px 44px -32px rgba(0, 0, 0, 0.9);
+
+  color-scheme: dark;
+}

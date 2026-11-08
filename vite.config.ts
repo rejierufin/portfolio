@@ -17,10 +17,8 @@ export default defineConfig({
     // Permissions-Policy. Do not duplicate them in Nginx config blindly -
     // some headers (e.g. CSP) need values that differ between dev and prod.
     headers: {
-      // SAMEORIGIN (not DENY) so the Funnels + SamplePlan modals can
-      // iframe their own /funnels/*.html and /sample-automation-plan.html
-      // documents. Cross-origin framing is still blocked.
-      'X-Frame-Options': 'SAMEORIGIN',
+      // No framing header here: the cloud preview embeds this dev server in a
+      // frame on another origin. Set X-Frame-Options at the proxy in production.
       'X-Content-Type-Options': 'nosniff',
       'Referrer-Policy': 'strict-origin-when-cross-origin',
       'Permissions-Policy': 'camera=(), microphone=(), geolocation=(), payment=(), interest-cohort=()',

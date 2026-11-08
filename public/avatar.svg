@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 1000" width="800" height="1000" role="img" aria-label="Rejie Rufin">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0e1c26" />
+      <stop offset="0.55" stop-color="#0a1420" />
+      <stop offset="1" stop-color="#060c14" />
+    </linearGradient>
+    <radialGradient id="glow" cx="0.72" cy="0.16" r="0.8">
+      <stop offset="0" stop-color="#2f8f82" stop-opacity="0.5" />
+      <stop offset="1" stop-color="#2f8f82" stop-opacity="0" />
+    </radialGradient>
+    <linearGradient id="mono" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#f2f7f2" />
+      <stop offset="1" stop-color="#b3cfc7" />
+    </linearGradient>
+  </defs>
+
+  <rect width="800" height="1000" fill="url(#bg)" />
+  <rect width="800" height="1000" fill="url(#glow)" />
+
+  <g fill="none" stroke="#6fd3c0" stroke-opacity="0.16" stroke-width="2">
+    <path d="M-80 210 C 90 150 230 270 390 215 S 700 110 880 195" />
+    <path d="M-80 258 C 90 198 230 318 390 263 S 700 158 880 243" />
+    <path d="M-80 306 C 90 246 230 366 390 311 S 700 206 880 291" />
+    <path d="M-80 354 C 90 294 230 414 390 359 S 700 254 880 339" />
+    <path d="M-80 404 C 90 344 230 464 390 409 S 700 304 880 389" />
+    <path d="M-80 456 C 90 396 230 516 390 461 S 700 356 880 441" />
+    <path d="M-80 736 C 90 676 240 800 400 742 S 700 640 880 722" />
+    <path d="M-80 786 C 90 726 240 850 400 792 S 700 690 880 772" />
+    <path d="M-80 836 C 90 776 240 900 400 842 S 700 740 880 822" />
+    <path d="M-80 886 C 90 826 240 950 400 892 S 700 790 880 872" />
+    <path d="M-80 936 C 90 876 240 1000 400 942 S 700 840 880 922" />
+    <path d="M-80 986 C 90 926 240 1050 400 992 S 700 890 880 972" />
+  </g>
+
+  <circle cx="640" cy="196" r="7" fill="#e0a06a" fill-opacity="0.85" />
+
+  <text
+    x="400"
+    y="560"
+    text-anchor="middle"
+    font-family="Poppins, 'Segoe UI', Helvetica, Arial, sans-serif"
+    font-size="248"
+    font-weight="600"
+    letter-spacing="-14"
+    fill="url(#mono)"
+  >RR</text>
+
+  <text
+    x="400"
+    y="672"
+    text-anchor="middle"
+    font-family="Poppins, 'Segoe UI', Helvetica, Arial, sans-serif"
+    font-size="21"
+    letter-spacing="7"
+    fill="#88aaa2"
+  >FREIGHT &amp; SHIPPING OPS</text>
+
+  <rect x="1" y="1" width="798" height="998" fill="none" stroke="#6fd3c0" stroke-opacity="0.18" />
+</svg>
