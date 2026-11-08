@@ -33,7 +33,7 @@ export const profile = {
   phone: '0960-342-7321',
   phoneHref: '+639603427321',
   linkedin: 'https://www.linkedin.com/in/rejie-rufin-837113147',
-  website: 'https://rejierufin.github.io',
+  website: 'https://rejierufin.github.io/portfolio/',
   // Drop your photo at public/portrait.jpg and it replaces the monogram.
   portraitSrc: `${import.meta.env.BASE_URL}portrait.jpg`,
   avatarSrc: `${import.meta.env.BASE_URL}avatar.svg`,

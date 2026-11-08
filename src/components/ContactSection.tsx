@@ -60,7 +60,7 @@ export function ContactSection() {
           <a className="contact-link" href={profile.website} target="_blank" rel="noreferrer">
             <span className="label">Portfolio</span>
             <span className="value">
-              rejierufin.github.io
+              rejierufin.github.io/portfolio
               <ArrowUpRight size={12} weight="bold" aria-hidden="true" />
             </span>
           </a>
